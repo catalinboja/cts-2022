@@ -1,4 +1,4 @@
-package ro.ase.acs.cts.documents;
+package ro.ase.acs.cts.documents.interfaces;
 
 public abstract class DocumentInterface {
 	private String name;

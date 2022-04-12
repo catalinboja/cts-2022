@@ -1,11 +1,14 @@
-package ro.ase.acs.cts.documents.ms;
+package ro.ase.acs.cts.documents;
 
-import ro.ase.acs.cts.documents.DocumentInterface;
+import ro.ase.acs.cts.documents.interfaces.DocumentInterface;
 
 public class DocumentWordText extends DocumentInterface {
+	
+	private int version;
 
-	public DocumentWordText(String title, int vb) {
+	public DocumentWordText(String title, int version) {
 		this.setName(title);
+		this.version = version;
 	}
 	
 	@Override

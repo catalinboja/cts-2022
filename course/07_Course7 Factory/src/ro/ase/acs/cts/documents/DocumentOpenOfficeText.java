@@ -1,6 +1,6 @@
-package ro.ase.acs.cts.documents.open.office;
+package ro.ase.acs.cts.documents;
 
-import ro.ase.acs.cts.documents.DocumentInterface;
+import ro.ase.acs.cts.documents.interfaces.DocumentInterface;
 
 public class DocumentOpenOfficeText extends DocumentInterface{
 
