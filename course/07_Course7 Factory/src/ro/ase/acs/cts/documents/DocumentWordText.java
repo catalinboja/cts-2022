@@ -1,12 +1,11 @@
 package ro.ase.acs.cts.documents;
 
-import ro.ase.acs.cts.documents.interfaces.DocumentInterface;
-
-public class DocumentWordText extends DocumentInterface {
+public class DocumentWordText extends AbstractDocument {
 	
 	private int version;
 
-	public DocumentWordText(String title, int version) {
+	public DocumentWordText(String title, int version, 
+			boolean hasMetaData, int compatibilityVersion) {
 		this.setName(title);
 		this.version = version;
 	}

@@ -1,11 +1,9 @@
 package ro.ase.acs.cts.documents;
 
-import ro.ase.acs.cts.documents.interfaces.DocumentInterface;
-
-public class DocumentOpenOfficeText extends DocumentInterface{
+public class DocumentOpenOfficeText extends AbstractDocument{
 
 	
-	public DocumentOpenOfficeText(String name) {
+	public DocumentOpenOfficeText(String name, int version) {
 		this.setName(name);
 	}
 	

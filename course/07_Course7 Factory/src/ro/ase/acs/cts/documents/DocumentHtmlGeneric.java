@@ -1,12 +1,11 @@
 package ro.ase.acs.cts.documents;
 
-import ro.ase.acs.cts.documents.interfaces.DocumentInterface;
-
-public class DocumentHtmlGeneric extends DocumentInterface{
+public class DocumentHtmlGeneric extends AbstractDocument{
 
 	boolean hasHeader;
 		
-	public DocumentHtmlGeneric(boolean hasHeader) {
+	public DocumentHtmlGeneric(String name, boolean hasHeader) {
+		this.name = name;
 		this.hasHeader = hasHeader;
 	}
 

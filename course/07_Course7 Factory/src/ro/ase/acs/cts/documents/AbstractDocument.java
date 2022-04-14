@@ -1,7 +1,7 @@
-package ro.ase.acs.cts.documents.interfaces;
+package ro.ase.acs.cts.documents;
 
-public abstract class DocumentInterface {
-	private String name;
+public abstract class AbstractDocument {
+	protected String name;
 	
 	public abstract String getType();
 	public abstract void print(String text);
