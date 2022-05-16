@@ -12,15 +12,17 @@ public class Test {
 		
 		notepadApp.addSnapshot(file.save());
 		
-		file.addText("It's a fine day");
+		file.addText("\nIt's a fine day");
 		
 		notepadApp.addSnapshot(file.save());
 		
-		file.addText("Is spring time");
+		file.addText("\nIs spring time");
+		
+		// System.out.println(file.getText());
 		
 		file.ctrlZ(notepadApp.recoverLastVersion());
 		file.ctrlZ(notepadApp.recoverLastVersion());
-		//file.ctrlZ(notepadApp.recoverLastVersion());
+		file.ctrlZ(notepadApp.recoverLastVersion());
 		
 		System.out.println(file.getText());
 		
